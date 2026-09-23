@@ -1,0 +1,9 @@
+{
+  "cardNumber": "4542 9931 9292 2293",
+  "expiryMonth": "12",
+  "expiryYear": "30",
+  "cvv": "123",
+  "nameOnCard": "John Doe",
+  "country": "India",
+  "confirmationMessage": "Thank you for shopping with us"
+}
