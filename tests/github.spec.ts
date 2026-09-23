@@ -17,4 +17,12 @@ git commit -m "new changes"
 git push
 on the above lineyou will get one recommended command to use 
 
+
+go to github
+not direct access to merge 
+create pull request 
+go to repository and click on pull request tab
+open new pull request
+
+
 */
