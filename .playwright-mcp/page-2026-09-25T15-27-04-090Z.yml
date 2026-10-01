@@ -1,0 +1,108 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - main [ref=e3]:
+    - generic [ref=e17]:
+      - generic [ref=e24]:
+        - heading "SecureBank" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Sign in to your account
+      - generic [ref=e27]:
+        - form "Sign in form" [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: Username
+            - textbox "Username" [ref=e31]:
+              - /placeholder: Enter username
+          - generic [ref=e32]:
+            - generic [ref=e33]: Password
+            - generic [ref=e34]:
+              - textbox "Password" [ref=e35]:
+                - /placeholder: Enter password
+              - button "Show password" [ref=e36]
+          - generic [ref=e40]:
+            - checkbox "Remember me" [ref=e41]
+            - checkbox [aria-hidden] [ref=e42]
+            - generic [ref=e43] [cursor=pointer]: Remember me
+          - button "Sign in to SecureBank" [ref=e44]: Sign In
+        - link "Forgot password?" [ref=e46] [cursor=pointer]:
+          - /url: /bank/forgot-password
+      - generic [ref=e47]:
+        - paragraph [ref=e48]: Test credentials
+        - table [ref=e50]:
+          - rowgroup [ref=e51]:
+            - row [ref=e52]:
+              - columnheader "Username" [ref=e53]
+              - columnheader "Password" [ref=e54]
+              - columnheader "Description" [ref=e55]
+          - rowgroup [ref=e56]:
+            - row [ref=e57]:
+              - cell [ref=e58]:
+                - generic [ref=e59]:
+                  - text: standard_user
+                  - button "Copy username standard_user" [ref=e60]
+              - cell [ref=e64]:
+                - generic [ref=e65]:
+                  - text: bank_sauce
+                  - button "Copy password for standard_user" [ref=e66]
+              - cell "Full access" [ref=e70]
+            - row [ref=e71]:
+              - cell [ref=e72]:
+                - generic [ref=e73]:
+                  - text: locked_user
+                  - button "Copy username locked_user" [ref=e74]
+              - cell [ref=e78]:
+                - generic [ref=e79]:
+                  - text: bank_sauce
+                  - button "Copy password for locked_user" [ref=e80]
+              - cell "Locked account" [ref=e84]
+            - row [ref=e85]:
+              - cell [ref=e86]:
+                - generic [ref=e87]:
+                  - text: frozen_user
+                  - button "Copy username frozen_user" [ref=e88]
+              - cell [ref=e92]:
+                - generic [ref=e93]:
+                  - text: bank_sauce
+                  - button "Copy password for frozen_user" [ref=e94]
+              - cell "Frozen — no transfers" [ref=e98]
+            - row [ref=e99]:
+              - cell [ref=e100]:
+                - generic [ref=e101]:
+                  - text: overdraft_user
+                  - button "Copy username overdraft_user" [ref=e102]
+              - cell [ref=e106]:
+                - generic [ref=e107]:
+                  - text: bank_sauce
+                  - button "Copy password for overdraft_user" [ref=e108]
+              - cell "Negative balance" [ref=e112]
+            - row [ref=e113]:
+              - cell [ref=e114]:
+                - generic [ref=e115]:
+                  - text: slow_user
+                  - button "Copy username slow_user" [ref=e116]
+              - cell [ref=e120]:
+                - generic [ref=e121]:
+                  - text: bank_sauce
+                  - button "Copy password for slow_user" [ref=e122]
+              - cell "Slow loading" [ref=e126]
+            - row [ref=e127]:
+              - cell [ref=e128]:
+                - generic [ref=e129]:
+                  - text: error_user
+                  - button "Copy username error_user" [ref=e130]
+              - cell [ref=e134]:
+                - generic [ref=e135]:
+                  - text: bank_sauce
+                  - button "Copy password for error_user" [ref=e136]
+              - cell "Wrong loan total" [ref=e140]
+            - row [ref=e141]:
+              - cell [ref=e142]:
+                - generic [ref=e143]:
+                  - text: admin_user
+                  - button "Copy username admin_user" [ref=e144]
+              - cell [ref=e148]:
+                - generic [ref=e149]:
+                  - text: admin_sauce
+                  - button "Copy password for admin_user" [ref=e150]
+              - cell "Admin view" [ref=e154]
+  - alert [ref=e155]
+  - button "Send feedback or report an issue" [ref=e156] [cursor=pointer]

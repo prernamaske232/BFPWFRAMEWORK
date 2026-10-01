@@ -56,11 +56,61 @@
 // await lp.loginfunctinality(data.email,data.password)
 // })
 
-import {test,expect} from'@playwright/test'
-import { LoginPage } from '../pages/loginPage'
-import { dashboardPage } from '../pages/dashboardPage'
-import { ExcelUtils } from '../utils/excelUtils'
+
+// import{test,expect}from "@playwright/test"
+// import { Login } from "../pages/practicepage"
+
+// const url= "https://rahulshettyacademy.com/client/#/auth/login"
+// const email= 'jegow99556@flosek.com'
+// const password= 'Test@123'
+// let errormassage ="Incorrect email or password"
+// let invalidpassword = "tfghjki"
 
 
 
 
+// test('valid login',async({page})=>{
+// const lp= new Login(page)
+// await lp.LaunchUrl(url)
+// await lp.logintoapplication(email,password)
+// await expect (lp.signoutbutton).toBeVisible()
+
+// })
+
+// test ('invalid login',async({page})=>{
+//      const lp= new Login(page)
+// await lp.LaunchUrl(url)
+// await lp.logintoapplication(email,invalidpassword)
+// await expect(lp.errormassage).toBeVisible()
+
+
+// })
+
+import{test,expect}from "@playwright/test"
+import { Login } from "../pages/practicepage"
+
+const url= "https://rahulshettyacademy.com/client/#/auth/login"
+const email= 'jegow99556@flosek.com'
+const password= 'Test@123'
+let errormassage ="Incorrect email or password"
+let invalidpassword = "tfghjki"
+
+
+
+
+test('valid login',async({page})=>{
+const lp= new Login(page)
+await lp.LaunchUrl(url)
+await lp.logintoapplication(email,password)
+await expect (lp.signoutbutton).toBeVisible()
+
+})
+
+test ('invalid login',async({page})=>{
+     const lp= new Login(page)
+await lp.LaunchUrl(url)
+await lp.logintoapplication(email,invalidpassword)
+await expect(lp.errormassage).toBeVisible()
+
+
+})

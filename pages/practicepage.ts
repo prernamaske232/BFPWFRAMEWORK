@@ -115,3 +115,37 @@
 
 
 // }
+
+import { Locator,Page } from "playwright/test";
+export class Login{
+
+page:Page
+email:Locator
+password:Locator
+loginbutton:Locator
+errormassage:Locator
+signoutbutton: Locator
+
+constructor(page:Page){
+this.page=page
+this.email=this.page.locator('#userEmail')
+this.password=this.page.locator('#userPassword')
+this.loginbutton=this.page.locator('#login')
+this.errormassage=this.page.locator('#toast-container')
+this.signoutbutton=this.page.getByText(' Sign Out ')
+
+}
+//action or method 
+async LaunchUrl (url:string){
+await this.page.goto(url)
+}
+
+async logintoapplication (username:string , password:string){
+await this.email.fill(username)
+await this.password.fill(password)
+await this.loginbutton.click()
+
+}
+
+
+}
